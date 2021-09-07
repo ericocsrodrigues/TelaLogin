@@ -36,6 +36,7 @@ if __name__ == '__main__':
         windwos, eventos, valores = sg.read_all_windows()
         if windwos == janela1 and eventos == sg.WIN_CLOSED or eventos == 'Sair':
             break
+
         elif windwos == janela1 and eventos == 'Novo Cadastro':
             janela1.close()
             janela2 = janela_cadastro()
